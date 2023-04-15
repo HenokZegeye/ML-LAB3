@@ -1,4 +1,3 @@
-import os
 import gym
 from stable_baselines3 import PPO, A2C
 from config import params

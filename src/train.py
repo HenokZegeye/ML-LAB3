@@ -2,7 +2,7 @@ import gym
 from stable_baselines3 import PPO, A2C
 import os
 import mlflow
-from stable_baselines3.common.logger import HumanOutputFormat, KVWriter, Logger
+from stable_baselines3.common.logger import HumanOutputFormat, Logger
 import sys
 from utils import MLflowOutputFormat
 from config import params
@@ -46,6 +46,8 @@ if __name__ == '__main__':
             tb_log_name=f'{ALGO_TYPE}'
             )
         model.save(f'{models_dir}/{TIMESTEPS*i}')
+        mlflow.log_artifact(f'{models_dir}/{TIMESTEPS*i}.zip', artifact_path="models")
+        
 
     mlflow.log_param("algo_type", ALGO_TYPE)
 
