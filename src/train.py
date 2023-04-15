@@ -11,7 +11,7 @@ ALGO_TYPE='PPO'
 EXPT_NAME = 'Different Algorithms'
 
 models_dir = f'{params["model_path"]}/{ALGO_TYPE}'
-logs_dir = 'logs'
+logs_dir = f'{params["logs_path"]}'
 
 loggers = Logger(
     folder=None,
