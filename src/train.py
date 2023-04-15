@@ -7,7 +7,7 @@ import sys
 from utils import MLflowOutputFormat
 from config import params
 
-ALGO_TYPE='A2C'
+ALGO_TYPE='PPO'
 EXPT_NAME = 'Different Algorithms'
 
 models_dir = f'{params["model_path"]}/{ALGO_TYPE}'
@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
     env = gym.make('LunarLander-v2')
     
-    model = A2C("MlpPolicy", env, verbose=1, tensorboard_log=logs_dir, device='cpu')
+    model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=logs_dir, device='cpu')
     
     model.set_logger(loggers)
     env.reset()

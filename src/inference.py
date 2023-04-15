@@ -7,7 +7,7 @@ env = gym.make('LunarLander-v2')
 env.reset()
 
 model_path = f'{params["inference_model_path"]}'
-model = A2C.load(model_path, env=env)
+model = PPO.load(model_path, env=env)
 
 episodes = 10
 
