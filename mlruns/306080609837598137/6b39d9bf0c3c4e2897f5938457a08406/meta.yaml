@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/henokbirru/Documents/EDISS/CourseMaterials/Machine%20Learning/Lab13/mlruns/306080609837598137/6b39d9bf0c3c4e2897f5938457a08406/artifacts
+end_time: 1681146198784
+entry_point_name: ''
+experiment_id: '306080609837598137'
+lifecycle_stage: active
+run_id: 6b39d9bf0c3c4e2897f5938457a08406
+run_name: A2C-01
+run_uuid: 6b39d9bf0c3c4e2897f5938457a08406
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681145966120
+status: 3
+tags: []
+user_id: henokbirru

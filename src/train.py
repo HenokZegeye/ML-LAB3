@@ -5,12 +5,12 @@ import mlflow
 from stable_baselines3.common.logger import HumanOutputFormat, KVWriter, Logger
 import sys
 from utils import MLflowOutputFormat
+from config import params
 
 ALGO_TYPE='A2C'
-EPOCHS = 30
 EXPT_NAME = 'Different Algorithms'
 
-models_dir = f'experiments/models/{ALGO_TYPE}'
+models_dir = f'{params["model_path"]}/{ALGO_TYPE}'
 logs_dir = 'logs'
 
 loggers = Logger(
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
 
     TIMESTEPS = 10000
-    for i in range(EPOCHS):
+    for i in range(params["epochs"]):
         model.learn(
             total_timesteps=TIMESTEPS, 
             reset_num_timesteps=False, 
