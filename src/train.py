@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     mlflow.set_experiment(EXPT_NAME)
 
-    mlflow.start_run(run_name=f"{ALGO_TYPE}-01")
+    mlflow.start_run(run_name=f"{ALGO_TYPE}-02")
 
     env = gym.make('LunarLander-v2')
     
