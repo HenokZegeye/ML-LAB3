@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/henokbirru/Documents/EDISS/CourseMaterials/Machine%20Learning/Lab13/mlruns/207289256468203770/d6db46669efc4a7ea995ad4f4885a06d/artifacts
+end_time: 1681630800106
+entry_point_name: ''
+experiment_id: '207289256468203770'
+lifecycle_stage: active
+run_id: d6db46669efc4a7ea995ad4f4885a06d
+run_name: PPO-02
+run_uuid: d6db46669efc4a7ea995ad4f4885a06d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1681629981926
+status: 3
+tags: []
+user_id: henokbirru
